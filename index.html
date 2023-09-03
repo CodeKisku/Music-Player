@@ -4,8 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Player</title>
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/d1a84ed9ad.js" crossorigin="anonymous"></script>
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src=".media/Eminem - Lose Yourself.jpeg" alt="Eminem-Lose Yourself" class="song-img">
+      <h1>Lose Yourself</h1>
+      <p>Eminem</p>
+
+      <audio controls>
+        <source src=".media/Eminem - Lose Yourself.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div><i class="fa-solid fa-play"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
